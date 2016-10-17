@@ -322,6 +322,7 @@ img {
 .wrapper {
     position: relative;
     padding-top: 62px;
+    min-height: 100%;
     background-color: #fafafa;
 }
 
