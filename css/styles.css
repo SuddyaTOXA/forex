@@ -321,7 +321,6 @@ img {
 /*----------------------------------------------------------------------------------*/
 .wrapper {
     position: relative;
-    height: 100%;
     padding-top: 62px;
     background-color: #fafafa;
 }
@@ -657,11 +656,10 @@ img {
         color: #212121;
     }
 .section-page-brokers {
-
+    padding-bottom: 70px;
 }
     .brokers-list {
         margin-top: -79px;
-        margin-bottom: 70px;
         margin-right: 7px;
         margin-left: 7px;
         border-radius: 2px;
