@@ -368,7 +368,9 @@ img {
 }
     .main-nav > ul > li {
         position: relative;
-        float: left;
+        display: table-cell;
+        vertical-align: middle;
+        border-bottom: 2px solid transparent;
         text-align: center;
     }
     .main-nav > ul > li:last-child {
@@ -384,11 +386,13 @@ img {
             font-size: 16px;
             font-weight: 300;
             text-decoration: none;
+            color: #212121;
         }
         .main-nav  li:hover,
-        .main-nav .current-menu-item  {
+        .main-nav > ul > li > a:hover,
+        .main-nav .current-menu-item {
             color: #00bcd4;
-            border-bottom: 2px solid #00bcd4;
+            border-bottom-color: #00bcd4;
         }
 
 /*burger-menu*/
@@ -800,11 +804,14 @@ img {
                     float: right;
                     margin-right: 1px;
                     width: 135px;
-                    height: 85px;
+                    min-height: 85px;
+                    display: table-cell;
+                    line-height: 85px;
                 }
                     .broker-logo-wrap img {
-                        width: 100%;
+                        max-width: 100%;
                         max-height: 100%;
+                        vertical-align: middle;
                     }
                 .price, .leverage {
                     font-size: 15px;
