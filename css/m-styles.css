@@ -428,7 +428,7 @@ img {
             -ms-box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
             -o-box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
             box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
-            padding-bottom: 120px;
+            padding-bottom: 80px;
         }
         .showing .mobile-menu-box {
             left: 0;
@@ -498,10 +498,10 @@ img {
 
         .mobile-menu-toggle {
             position: relative;
-            left: 18px;
+            left: -5px;
             top: 0;
             height: 56px;
-            width: 56px;
+            width: 52px;
             vertical-align: middle;
             cursor: pointer;
             font-size: 26px;
@@ -542,8 +542,6 @@ img {
         .mobile-menu-toggle.active{
             border-top: none;
             border-bottom: none;
-            width: 60px;
-            height: 60px;
             top: 0;
         }
         .mobile-menu-toggle.active:before {
@@ -601,17 +599,16 @@ img {
     .page-banner-title {
         display: table-cell;
         width: 100%;
-        padding-top: 13px;
-        padding-bottom: 97px;
+        padding-top: 20px;
+        padding-bottom: 24px;
         font-size: 24px;
         font-weight: 300;
         color: #212121;
     }
 .section-page-brokers {
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
     .brokers-list {
-        margin-top: -72px;
         border-radius: 2px;
         -moz-border-radius: 2px;
         -webkit-border-radius: 2px;
