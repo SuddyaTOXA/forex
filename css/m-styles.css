@@ -972,14 +972,14 @@ img {
 .wrap-404 {
     text-align: center;
     padding: 60px 0 70px;
-    color: #0097de;
+    color: #00bcd4;
     font-size: 66px;
     letter-spacing: 0;
 }
     .wrap-404 .error-404{
         display: block;
         margin-bottom: -20px;
-        font: 700 180px/1 "proximanova-bold";
+        font: 700 180px/1 "Roboto";
     }
 
 /*----------------------------------------------------------------------------------*/
