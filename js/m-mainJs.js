@@ -15,4 +15,7 @@ $(document).ready(function() {
         $(document.body).toggleClass('overflow');
     });
 
+    $(".mobile-menu a").on('click', function(){
+        $(this).toggleClass('open').siblings('.sub-menu').slideToggle(350);
+    });
 });

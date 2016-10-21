@@ -342,10 +342,10 @@ img {
     box-shadow:  3px 2px 5px 0px rgba(0,0,0,0.2);
 }
     .logo {
-        float: right;
-        max-height: 37px;
-        max-width: 160px;
-        margin-top: 12px;
+        float: left;
+        max-height: 21px;
+        max-width: 95px;
+        margin-top: 19px;
         -webkit-transition: 0.35s;
         -moz-transition: 0.35s;
         -o-transition: 0.35s;
@@ -375,7 +375,7 @@ img {
         right: 0;
         height: 0;
         width: 0;
-        top: 56px;
+        top: 0;
         -webkit-transition-delay: 0.35s;
         -moz-transition-delay: 0.35s;
         -ms-transition-delay: 0.35s;
@@ -400,7 +400,7 @@ img {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0,0,0,0.25);
+        background-color: rgba(0,0,0,0.5);
         opacity: 0;
         -webkit-transition: opacity 0.35s;
         -moz-transition: opacity 0.35s;
@@ -411,7 +411,6 @@ img {
         opacity: 1;
     }
         .mobile-menu-box {
-            width: 320px;
             max-width: 85%;
             background-color: #FFFFFF;
             position: absolute;
@@ -432,32 +431,27 @@ img {
         }
         .showing .mobile-menu-box {
             left: 0;
+            overflow-x: hidden;
         }
-
+        .mobile-menu {
+            margin-top: 56px;
+            border-top: 1px solid #eeeeee;
+            padding-top: 8px;
+        }
             .mobile-menu li {
                 position: relative;
-                margin-left: 33px;
             }
-            .mobile-menu > li:before {
-                content: '\2014';
-                position: absolute;
-                font-weight: 400;
-                left: -5px;
-                top: 50%;
-                margin-top: -12px;
-                color: #3a3a3a;
-            }
+
                 .mobile-menu li a {
                     position: relative;
                     display: block;
-                    padding: 13px 15px 11px;
-                    font-size: 16px;
-                    font-weight: 300;
+                    padding: 13px 16px 12px;
+                    font-size: 14px;
+                    font-weight: 500;
                     text-decoration: none;
-                    color: #212121;
+                    color: #424242;
                 }
-                .mobile-menu > li:hover:before,
-                .mobile-menu li:hover a {
+                .mobile-menu li:hover > a {
                     color: #00bcd4;
                 }
                 .mobile-menu > li > a {
@@ -465,32 +459,32 @@ img {
                 }
 
         .mobile-menu .expanded:after {
-            content: "\f107";
-            font-family: FontAwesome;
-            font-size: 16px;
-            line-height: 1;
-            text-indent: 0;
-            width: 18px;
-            height: 18px;
+            content: '';
             position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid #424242;
+            border-top: none;
             top: 50%;
-            margin-top: -8px;
-            right: 10px;
+            margin-top: -3px;
+            right: 16px;
             display: inline-block;
-            color: #979fa2;
         }
-        /*.mobile-menu .expanded:hover:after {*/
 
-        /*}*/
         .mobile-menu .expanded.open:after {
-            content: "\f106";
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #424242;
+            border-bottom: none;
         }
 
         .mobile-menu .sub-menu {
             display: none;
         }
         .mobile-menu .sub-menu a {
-            padding-left: 30px;
+            padding-left: 26px;
         }
         .mobile-menu .sub-menu .sub-menu a {
             padding-left: 45px;
@@ -498,6 +492,7 @@ img {
 
         .mobile-menu-toggle {
             position: relative;
+            float: left;
             left: -5px;
             top: 0;
             height: 56px;
@@ -568,7 +563,10 @@ img {
             bottom: 0;
             background: #3a3a3a;
         }
-
+    .mobile-menu-box .mobile-menu-toggle.active {
+        float: right;
+        margin-right: -7px;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -584,6 +582,9 @@ img {
 }
 .coll-8 {
     width: 66.666%;
+}
+.coll-9 {
+    width: 74.999%;
 }
 /*---------------------------------------HOME---------------------------------------*/
 
