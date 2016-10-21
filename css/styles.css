@@ -1323,7 +1323,8 @@ img {
                 text-decoration: none;
             }
             .footer-nav > li a:hover,
-            .footer-nav > li.current-item a {
+            .footer-nav > li.current-menu-item a,
+            .footer-nav > li.current_page_item a{
                 color: #ffffff;
             }
     .footer-social {
