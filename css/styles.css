@@ -788,8 +788,18 @@ img {
             color: #bdbdbd;
             text-decoration: none;
         }
-        a.back-to-page:hover {
-            color: #00bcd4;
+        a.back-to-page:before {
+            position: absolute;
+            content: '';
+            width: 16px;
+            height: 16px;
+            top: 50%;
+            margin-top: -8px;
+            left: -30px;
+            background-image: url("../img/arrow_back.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         .box-section {
             overflow: hidden;
