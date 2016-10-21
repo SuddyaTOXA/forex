@@ -411,7 +411,7 @@ img {
     display: block;
     position: absolute;
     z-index: 10;
-    top: 60px;
+    top: 61px;
     left: 0;
     min-width: 100%;
     background: #ffffff;
@@ -996,19 +996,19 @@ img {
             color: #424242;
         }
         .content-block h1 {
-            font-size: 26px;
+            font-size: 28px;
         }
         .content-block h2 {
             font-size: 24px;
         }
         .content-block h3 {
-            font-size: 22px;
-        }
-        .content-block h4 {
             font-size: 21px;
         }
-        .content-block h5 {
+        .content-block h4 {
             font-size: 20px;
+        }
+        .content-block h5 {
+            font-size: 19px;
         }
         .content-block h6 {
             font-size: 18px;
@@ -1041,11 +1041,11 @@ img {
                 display: table;
             }
             .content-block ol li:before {
-                content: counter(num) ') ';
+                content: counter(num) '.';
                 counter-increment: num;
                 display: inline-block;
                 min-width: 16px;
-                margin-right: 6px;
+                margin-right: 4px;
             }
         .content-block ul {
             padding-left: 16px;
