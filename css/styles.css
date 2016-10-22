@@ -935,9 +935,10 @@ img {
     }
         .product-page-pros-cons-list {
             overflow: hidden;
+            border-bottom: 1px solid #eeeeee;
         }
             .product-page-pros-cons-list .content-block {
-                border-top: none;
+                border: none;
                 padding-bottom: 35px;
             }
             .product-page-pros-cons-list > li {

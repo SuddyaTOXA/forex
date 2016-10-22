@@ -1202,7 +1202,7 @@ img {
             content: counter(num) '.';
             counter-increment: num;
             display: inline-block;
-            min-width: 16px;
+            min-width: 14px;
             margin-right: 4px;
         }
     .content-block ul {
