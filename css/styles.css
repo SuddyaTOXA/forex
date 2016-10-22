@@ -224,6 +224,9 @@ img {
         float: left;
         width: 25%;
     }
+    .cell-list > li:first-child {
+        clear: both;
+    }
         .list-box {
             overflow: hidden;
         }
@@ -253,10 +256,10 @@ img {
             .cell-box * {
                 line-height: 1.3;
             }
-                .cell-box a {
+                .cell-box > a {
                     text-decoration: none;
                 }
-                .cell-box a:hover {
+                .cell-box > a:hover {
                     text-decoration: none;
                 }
                     .title-cell {
@@ -270,7 +273,9 @@ img {
                         transition: 0.2s;
                     }
                     a:hover .title-cell { color: #00bcd4; }
-
+                    .author-date {
+                        margin-bottom: 6px;
+                    }
 
 .mar-b-70 { margin-bottom: 70px; }
 /*----------------------------------------------------------------------------------*/
@@ -459,6 +464,9 @@ img {
             float: left;
             width: 33.333%;
         }
+        .list-widgets > li:first-child {
+            clear: both;
+        }
             .widget {
                 margin: 10px;
                 -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
@@ -538,8 +546,86 @@ img {
         color: #ffffff;
     }
 .section-page-news {
-
+    padding-bottom: 135px;
 }
+    .section-page-news .desc-cell {
+        color: #757575;
+    }
+    .cell-list.top-list {
+        margin-top: -80px;
+    }
+        .cell-list.top-list li {
+            width: 33.333%;
+        }
+    .section-title {
+        margin-top: 15px;
+        padding-left: 10px;
+        font-size: 24px;
+        font-weight: 400;
+        color: #212121;
+    }
+    .list-news {
+        margin-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .list-news * {
+        line-height: 1.3;
+    }
+        .list-news > li {
+            overflow: hidden;
+            padding: 24px 0;
+            border-bottom: 1px solid #eeeeee;
+        }
+        .list-news > li:first-child {
+            border-top: 1px solid #eeeeee;
+        }
+            .list-news-img-wrap {
+                float: left;
+                padding-left: 10px;
+                width: 195px;
+                height: 110px;
+                text-align: center;
+            }
+                .list-news-img-wrap img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+
+            .list-news-text-wrap {
+                overflow: hidden;
+                padding-left: 16px;
+            }
+                .list-news-text-wrap > a {
+                    text-decoration: none;
+                }
+                    .list-news-text-wrap > a:hover h3 {
+                        color: #00bcd4;
+                    }
+                    .list-news-item-title {
+                        margin-top: -6px;
+                        margin-bottom: -3px;
+                        line-height: 1.3;
+                        font-size: 24px;
+                        font-weight: 400;
+                        color: #424242;
+                    }
+                    .list-news .author,
+                    .list-news .author a,
+                    .list-news .date {
+                        font-size: 13px;
+                        color: #bdbdbd;
+                        -webkit-transition: 0.2s;
+                        -moz-transition: 0.2s;
+                        -o-transition: 0.2s;
+                        transition: 0.2s;
+                    }
+                    .list-news .desc-cell {
+                        display: block;
+                        margin-top: 10px;
+                        font-size: 14px;
+                        color: #757575;
+                    }
 /*---------------------------------------FOREX-PAGE---------------------------------*/
 .section-page-banner {
     background-color: #f2f2f2;
