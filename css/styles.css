@@ -277,7 +277,12 @@ img {
                     .author-date {
                         margin-bottom: 6px;
                     }
-
+                    .desc-cell * {
+                        margin-bottom: 8px;
+                    }
+                    .desc-cell *:last-child {
+                        margin-bottom: 0;
+                    }
 .mar-b-70 { margin-bottom: 70px; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
