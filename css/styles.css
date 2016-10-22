@@ -558,6 +558,13 @@ img {
         .cell-list.top-list li {
             width: 33.333%;
         }
+        .cell-list.top-list > li:nth-child(4n+1) {
+            clear: none;
+        }
+        .cell-list.top-list > li:nth-child(3n+1) {
+            clear: both;
+        }
+
     .section-title {
         margin-top: 15px;
         padding-left: 10px;
