@@ -1225,7 +1225,7 @@ img {
                         color: #424242;
                     }
                         .product-options-list > li {
-                            padding: 15px 0;
+                            padding: 15px 5px;
                         }
                         .table-cols-2 > li:nth-child(odd) .product-options-list > li {
                             padding-right: 10px;
