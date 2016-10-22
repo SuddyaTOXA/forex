@@ -224,7 +224,8 @@ img {
         float: left;
         width: 25%;
     }
-    .cell-list > li:first-child {
+    .cell-list > li:first-child,
+    .cell-list > li:nth-child(4n+1) {
         clear: both;
     }
         .list-box {
@@ -263,7 +264,7 @@ img {
                     text-decoration: none;
                 }
                     .title-cell {
-                        margin-bottom: 3px;
+                        margin-bottom: 5px;
                         font-size: 24px;
                         font-weight: 400;
                         color: #212121;
