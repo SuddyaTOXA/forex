@@ -1064,7 +1064,6 @@ img {
                         width: 100%;
                     }
                         .product-page-info-list > li > ul {
-                            line-height: 10px;
                             /*padding-left: 16px;*/
                         }
             .product-page-info-bottom-box {
@@ -1378,7 +1377,7 @@ a.popup-close-btn {
     color: #424242;
 }
 .product-options-list > li {
-    padding: 15px 0;
+    padding: 11px 0 10px;
 }
 .table-cols-2 > li:nth-child(odd) .product-options-list > li {
     padding-right: 10px;
