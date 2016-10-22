@@ -470,6 +470,8 @@ img {
         }
             .widget {
                 margin: 10px;
+                max-height: 570px;
+                overflow-y: auto;
                 -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
                 -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
                 box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
@@ -481,7 +483,7 @@ img {
                 }
                 .widget-title {
                     margin-left: -16px;
-                    margin-right: 16px;
+                    margin-right: -16px;
                     padding-left: 16px;
                     padding-right: 16px;
                     padding-bottom: 14px;
@@ -604,6 +606,7 @@ img {
                 overflow: hidden;
                 padding-left: 16px;
             }
+
                 .list-news-text-wrap > a {
                     text-decoration: none;
                 }
