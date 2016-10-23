@@ -367,7 +367,9 @@ img {
             }
             .main-nav  li:hover,
             .main-nav > ul > li > a:hover,
-            .main-nav .current-menu-item {
+            .main-nav .current-menu-item,
+            .main-nav .current-menu-ancestor,
+            .main-nav .current-menu-parent {
                 color: #00bcd4;
                 border-bottom-color: #00bcd4;
             }
