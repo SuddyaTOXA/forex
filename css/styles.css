@@ -945,7 +945,6 @@ img {
                         display: inline-block;
                         margin: 0 2px;
                     }
-            .best-choice { display: none}
     .top-broker .broker-info-list {
         height: 150px;
         background-color: #f0fbfd;
@@ -977,10 +976,11 @@ img {
                     border-right: 20px solid transparent;
                     z-index: -1;
                 }
-                .top-broker .best-choice {
+                .best-choice {
                     position: absolute;
                     top: 0;
                     right: 9px;
+                    max-width: 60%;
                     display: inline-block;
                     padding: 2px 10px 2px;
                     font-size: 12px;
