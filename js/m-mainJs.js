@@ -18,4 +18,9 @@ $(document).ready(function() {
     $(".mobile-menu a").on('click', function(){
         $(this).toggleClass('open').siblings('.sub-menu').slideToggle(350);
     });
+
+    // for FAQ accordion
+    $(".accordion-list > li").on('click', function(){
+        $(this).toggleClass('active').find('.accordion-box-content').slideToggle(500);
+    });
 });
