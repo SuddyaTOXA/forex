@@ -644,6 +644,36 @@ img {
                         font-size: 14px;
                         color: #757575;
                     }
+/*---------------------------------------SINGLE-NEWS--------------------------------*/
+.page-template-news-page .wrapper {
+    background-color: #fafafa;
+}
+.section-article-page {
+    margin-bottom: 60px;
+}
+    .section-article-page .wrap-section {
+        padding-bottom: 70px;
+    }
+    .article-page-top-box {
+        margin-bottom: 16px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #eeeeee;
+    }
+        .article-page-title {
+            line-height: 1.2;
+            font-size: 34px;
+            font-weight: 300;
+            color: #424242;
+        }
+        .article-page-top-box .author-date {
+            margin-top: 3px;
+            margin-bottom: 0;
+        }
+            .article-page-top-box .author,
+            .article-page-top-box .author a,
+            .article-page-top-box .date {
+                font-size: 13px;
+            }
 /*---------------------------------------FOREX-PAGE---------------------------------*/
 .section-page-banner {
     background-color: #f2f2f2;
@@ -1257,12 +1287,12 @@ img {
         .content-block img.alignleft{
             float: left;
             margin: 7px 20px 18px 0;
-            max-width: 380px;
+            max-width: 535px;
         }
         .content-block img.alignright{
             float: right;
             margin: 7px 0 18px 20px;
-            max-width: 380px;
+            max-width: 535px;
         }
         .content-block img.aligncenter{
             display: block;

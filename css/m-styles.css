@@ -800,6 +800,35 @@ a:hover .title-cell { color: #00bcd4; }
                         font-size: 12px;
                         color: #757575;
                     }
+/*---------------------------------------SINGLE-NEWS--------------------------------*/
+.page-template-news-page .wrapper {
+    background-color: #fafafa;
+}
+.section-article-page {}
+    .section-article-page .wrap-section {
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+    .article-page-top-box {
+        margin-bottom: 16px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #eeeeee;
+    }
+        .article-page-title {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 1.2;
+            color: #424242;
+        }
+        .article-page-top-box .author-date {
+            margin-top: -3px;
+            margin-bottom: 0;
+        }
+            .article-page-top-box .author,
+            .article-page-top-box .author a,
+            .article-page-top-box .date {
+                font-size: 13px;
+            }
 /*---------------------------------------FOREX-PAGE---------------------------------*/
 .section-page-banner {
     background-color: #eeeeee;
