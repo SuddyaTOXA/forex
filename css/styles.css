@@ -74,7 +74,9 @@ a.btn, .btn {
     cursor: pointer;
     text-decoration: none;
 }
-.btn:hover { background-color: #0097a7;}
+.btn:hover { background-color: #0097a7; }
+.btn.grey { background-color: #b0bfc6; }
+.btn.grey:hover { background-color: #808a8f; }
 input::-webkit-input-placeholder {
     -webkit-transition: 0.25s;
     -moz-transition: 0.25s;
@@ -674,6 +676,32 @@ img {
             .article-page-top-box .date {
                 font-size: 13px;
             }
+/*---------------------------------------GUIDE-PAGE---------------------------------*/
+.page-template-guide-page .article-page-top-box {
+    margin-bottom: 22px;
+    padding-bottom: 16px;
+}
+    .page-template-guide-page .content-block img.aligncenter,
+    .page-template-guide-page .content-block img.alignleft,
+    .page-template-guide-page .content-block img.alignright {
+        margin-top: 34px;
+        margin-bottom: 34px;
+    }
+    .guide-page-btn-box {
+        display: block;
+        margin-top: 38px;
+        text-align: center;
+    }
+        .guide-page-btn-box .btn {
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-left: 35px;
+            min-width: 150px;
+            font-weight: 300;
+        }
+        .guide-page-btn-box .btn:first-child {
+            margin-left: 0;
+        }
 /*---------------------------------------FOREX-PAGE---------------------------------*/
 .section-page-banner {
     background-color: #f2f2f2;
