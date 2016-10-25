@@ -36,10 +36,14 @@ $(document).ready(function() {
     });
 
     // for popups
-    $(".popup-open, .popup-close").on('click', function(e){
+    $(".popup-open").on('click', function(e){
         e.preventDefault();
-        $("#popup-ajax").toggleClass('showing');
-        // $(document.body).toggleClass('overflow');
+        var id = $(this).data('id');
+        $("#popup-ajax-"+id).toggleClass('showing');
+    });
+    $(".popup-close").on('click', function(e){
+        e.preventDefault();
+        $(".popup-overlay-box").removeClass('showing');
     });
 
     // for FAQ accordion
