@@ -101,6 +101,37 @@ input:-moz-placeholder {
     -o-transition: 0.25s;
     transition: 0.25s;
 }
+
+.search-field {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 25px 60px 25px 21px;
+    border: 1px solid #eeeeee;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    -webkit-box-shadow: 0px 3px 8px -3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 8px -3px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 8px -3px rgba(0,0,0,0.2);
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+.search-submit {
+    position: absolute;
+    z-index: 5;
+    width: 60px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
 .check-style input[type=checkbox],
 .radio-style input[type=radio] {
     display: none;
@@ -830,6 +861,92 @@ img {
                 .accordion-box-content *:last-child {
                     margin-bottom: 0;
                 }
+/*---------------------------------------GLOSSARY-----------------------------------*/
+.page-template-glossary .wrap-section {
+    padding-bottom: 53px;
+}
+    .page-template-glossary .article-page-top-box {
+        padding-bottom: 16px;
+    }
+        .page-template-glossary .content-block {
+            padding-bottom: 20px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #eeeeee;
+        }
+        .glossary-wrap {
+            margin: 0 auto;
+        }
+            .letter-list {
+                display: table;
+                margin-bottom: 16px;
+                width: 100%;
+                table-layout: fixed;
+            }
+                .letter-list > li {
+                    display: table-cell;
+                    height: 10px;
+                }
+                    .letter-list a {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #00bcd4;
+                        text-decoration: none;
+                    }
+                    .letter-list a:hover {
+                        text-decoration: underline;
+                    }
+            .glossary-search {
+                position: relative;
+                margin-bottom: 12px;
+            }
+            .glossary-search label:before  {
+                content: '\f002';
+                position: absolute;
+                z-index: 3;
+                right: 21px;
+                top: 50%;
+                margin-top: -11px;
+                font: 22px FontAwesome;
+                color: #c5c7c8;
+            }
+            .glossary {}
+                .glossary > li {}
+                    .glossary > li > h3 {
+                        padding-top: 20px;
+                        padding-bottom: 12px;
+                        font-size: 24px;
+                        font-weight: 500;
+                        color: #424242;
+                    }
+                    .glossary >li:first-child > h3 {
+                        padding-top: 0;
+                    }
+                    .glossary .accordion-list {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                        .glossary .accordion-list h2 {
+                            padding-top: 10px;
+                            padding-bottom: 13px;
+                            padding-right: 140px;
+                            font-size: 18px;
+                            font-weight: 500;
+                        }
+                        .glossary .accordion-list > li h2.active {
+                            padding-bottom: 13px;
+                        }
+                        .glossary .accordion-list > li h2:before,
+                        .glossary .accordion-list > li h2:after {
+                            margin-top: -2px;
+                        }
+                        .glossary .accordion-box-content {
+                            margin-bottom: 2px;
+                            padding: 11px 140px 11px 20px;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #424242;
+                            border-bottom: 1px solid #eeeeee;
+                        }
 /*---------------------------------------FOREX-PAGE---------------------------------*/
 .section-page-banner {
     background-color: #f2f2f2;
