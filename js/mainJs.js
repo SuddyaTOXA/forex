@@ -47,7 +47,7 @@ $(document).ready(function() {
     });
 
     // for FAQ accordion
-    $(".accordion-list > li").on('click', function(){
-        $(this).toggleClass('active').find('.accordion-box-content').slideToggle(500);
+    $(".accordion-list > li > h2").on('click', function(){
+        $(this).toggleClass('active').parent().find('.accordion-box-content').slideToggle(500);
     });
 });
