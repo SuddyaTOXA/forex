@@ -75,9 +75,69 @@ a.btn, .btn {
     cursor: pointer;
     text-decoration: none;
 }
+.btn-send {
+    padding: 10px 15px 12px;
+    font-family: "Roboto";
+    min-width: 135px;
+    width: 135px;
+    font-size: 15px;
+    font-weight: 300;
+    border: 1px solid transparent;
+}
 .btn:hover { background-color: #0097a7;}
 .btn.grey { background-color: #b0bfc6; }
 .btn.grey:hover { background-color: #808a8f; }
+
+
+.input-style {
+    display: block;
+    width: 100%;
+    margin: 0;
+    border: 1px solid #ffffff;
+    box-shadow: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+input.input-style,
+input.TextField {
+    height: 42px;
+    line-height: 42px;
+}
+
+#imageverify {
+    height: 36px;
+    display: inline-block;
+    max-width: 150px;
+}
+.input-style:hover,
+.input-style:active,
+.input-style:focus{
+}
+textarea.contact-me-text {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    min-height: 122px;
+    resize: none;
+    border: 1px solid #ffffff;
+}
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder,
+input:-moz-placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+}
+
+
 input::-webkit-input-placeholder {
     -webkit-transition: 0.25s;
     -moz-transition: 0.25s;
@@ -1106,6 +1166,63 @@ a:hover .title-cell { color: #00bcd4; }
                             color: #424242;
                             border-bottom: 1px solid #eeeeee;
                         }
+/*---------------------------------------CONTACT-US---------------------------------*/
+.page-template-contact-us {}
+.page-template-contact-us .article-page-top-box {
+    padding-bottom: 16px;
+}
+.page-template-contact-us .content-block {
+    max-width: 720px;
+}
+.social-links {
+    margin-top: 18px;
+}
+.social-links > li {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.social-links li:first-child {
+    margin-left: 0;
+}
+.social-links li:hover i{
+    color: #00bcd4;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.social-links li a {
+    display: block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.social-links i {
+    vertical-align: top;
+    line-height: 26px;
+    color: #212121;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.social-links i.fa {
+    font-size: 22px;
+}
+.contact-us-form {
+    margin-top: 5px;
+    width: 100%;
+}
+.contact-me-box {
+    margin-top: 11px;
+    text-align: right;
+}
 /*---------------------------------------FOREX-PAGE---------------------------------*/
 .section-page-banner {
     background-color: #eeeeee;
@@ -2034,3 +2151,179 @@ a.popup-close-btn {
 /*----------------------------------------------------------------------------------*/
 /*--------------------------------------OTHER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+/*-------------------------------------HOSHI---------------------------------------*/
+.input {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.input__field {
+    position: relative;
+    display: block;
+    float: right;
+    padding: 17px 0;
+    border: none;
+    border-radius: 0;
+    color: #000;
+    font-weight: 400;
+    -webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+    outline: none;
+}
+
+.input__label {
+    display: inline-block;
+    float: right;
+    width: 40%;
+    color: #757575;
+    font-weight: 400;
+    font-size: 13px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.input__label-content {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+
+/* Hoshi */
+.input--hoshi {
+    overflow: hidden;
+}
+
+.input__field--hoshi {
+    width: 100%;
+    padding: 17px 0;
+    background: transparent;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.input__label--hoshi {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 10px);
+    text-align: left;
+    pointer-events: none;
+    /*-webkit-transition: 0.3s;*/
+    /*-moz-transition: 0.3s;*/
+    /*-o-transition: 0.3s;*/
+    /*transition: 0.3s;*/
+}
+
+.input__label-content--hoshi {
+    position: absolute;
+}
+
+.input__label--hoshi::before,
+.input__label--hoshi::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 10px);
+    border-bottom: 1px solid #B9C1CA;
+}
+
+.input__label--hoshi::after {
+    border-bottom: 2px solid red;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.input__label--hoshi-color-1::after {
+    border-color: hsl(200, 100%, 50%);
+}
+
+.input__label--hoshi-color-2::after {
+    border-color: hsl(160, 100%, 50%);
+}
+
+.input__label--hoshi-color-3::after {
+    border-color: hsl(20, 100%, 50%);
+}
+
+.input__field--hoshi:focus {
+    padding-top: 27px;
+}
+.input__field--hoshi.contact-me-text:focus {
+    /*margin-bottom: 20px;*/
+}
+.input__field--hoshi:focus + .input__label--hoshi,
+.active__field {
+    font-weight: 400;
+    font-size: 12px;
+    color: #00bcd4;
+}
+.input__field--hoshi:focus + .input__label--hoshi .warring,
+.active__field .warring {
+    color: #f34235;
+}
+.input__field--hoshi:focus + .input__label--hoshi::after,
+.input--filled .input__label--hoshi::after {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.input__field--hoshi:focus + .input__label--hoshi .input__label-content--hoshi,
+.input--filled .input__label-content--hoshi {
+    background-color: #ffffff;
+    -webkit-animation: anim-1 0.3s forwards;
+    animation: anim-1 0.3s forwards;
+}
+
+@-webkit-keyframes anim-1 {
+    50% {
+        opacity: 0;
+        -webkit-transform: translate3d(1em, 0, 0);
+        transform: translate3d(1em, 0, 0);
+    }
+    51% {
+        opacity: 0;
+        -webkit-transform: translate3d(-1em, -40%, 0);
+        transform: translate3d(-1em, -40%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -40%, 0);
+        transform: translate3d(0, -40%, 0);
+    }
+}
+
+@keyframes anim-1 {
+    50% {
+        opacity: 0;
+        -webkit-transform: translate3d(1em, 0, 0);
+        transform: translate3d(1em, 0, 0);
+    }
+    51% {
+        opacity: 0;
+        -webkit-transform: translate3d(-1em, -40%, 0);
+        transform: translate3d(-1em, -40%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -40%, 0);
+        transform: translate3d(0, -40%, 0);
+    }
+}
