@@ -907,7 +907,6 @@ a:hover .title-cell { color: #00bcd4; }
         .accordion-list > li{
             position: relative;
             background: #ffffff;
-            cursor: pointer;
             -webkit-transition-duration: 0.3s;
             -o-transition-duration: 0.3s;
             -moz-transition-duration: 0.3s;
@@ -932,6 +931,7 @@ a:hover .title-cell { color: #00bcd4; }
                 -moz-transition-duration: 0.3s;
                 transition: 0.3s;
                 border-bottom: 1px solid #eeeeee;
+                cursor: pointer;
             }
             .accordion-list h2.active {
                 color: #00bcd4;

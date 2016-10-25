@@ -747,7 +747,6 @@ img {
         .accordion-list > li{
             position: relative;
             background: #ffffff;
-            cursor: pointer;
             -webkit-transition-duration: 0.3s;
             -o-transition-duration: 0.3s;
             -moz-transition-duration: 0.3s;
@@ -773,6 +772,7 @@ img {
                 -moz-transition-duration: 0.3s;
                 transition: 0.3s;
                 border-bottom: 1px solid #eeeeee;
+                cursor: pointer;
             }
             .accordion-list h2.active {
                 color: #00bcd4;
@@ -885,6 +885,7 @@ img {
                 .letter-list > li {
                     display: table-cell;
                     height: 10px;
+                    text-align: center;
                 }
                     .letter-list a {
                         font-size: 18px;
