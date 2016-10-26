@@ -1060,9 +1060,19 @@ img {
             width: 100%;
             max-width: 500px;
         }
+            .contact-me-form br {
+                display: none;
+            }
             .contact-me-box {
                 margin-top: 11px;
                 text-align: right;
+            }
+            div.wpcf7-validation-errors,
+            div.wpcf7-mail-sent-ok {
+                text-align: center;
+            }
+            .contact-us-form div.wpcf7 img.ajax-loader {
+                float: left;
             }
 /*---------------------------------------FOREX-PAGE---------------------------------*/
 .section-page-banner {

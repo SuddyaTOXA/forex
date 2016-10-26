@@ -25,17 +25,17 @@ $(document).ready(function() {
     });
 
     //delete input wrap
-    $('.delete-wrap').unwrap();
+    $('.delete-wrap').unwrap().next('br').remove();
 
     //input style
     $( ".input__field--hoshi").each(function(){
         $(this).change(function() {
             if($(this).val() != ''){
-                // Если поле не пустое удаляем класс-указание
+                // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                 $(this).parent().addClass('input__field');
                 $(this).parent().find('.input__label-content').addClass('active__field');
             } else {
-                // Если поле пустое добавляем класс-указание
+                // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                 $(this).parent().removeClass('input__field');
                 $(this).parent().find('.input__label-content').removeClass('active__field');
             }

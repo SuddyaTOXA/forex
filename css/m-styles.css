@@ -124,7 +124,7 @@ textarea.contact-me-text {
     padding-top: 8px;
     padding-bottom: 8px;
     width: 100%;
-    min-height: 122px;
+    height: 122px;
     resize: none;
     border: 1px solid #ffffff;
 }
@@ -1222,6 +1222,16 @@ a:hover .title-cell { color: #00bcd4; }
 .contact-me-box {
     margin-top: 11px;
     text-align: right;
+}
+.contact-me-form br {
+    display: none;
+}
+div.wpcf7-validation-errors,
+div.wpcf7-mail-sent-ok {
+    text-align: center;
+}
+.contact-us-form div.wpcf7 img.ajax-loader {
+    float: left;
 }
 /*---------------------------------------FOREX-PAGE---------------------------------*/
 .section-page-banner {
