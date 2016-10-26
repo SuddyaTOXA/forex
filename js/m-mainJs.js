@@ -31,11 +31,9 @@ $(document).ready(function() {
     $( ".input__field--hoshi").each(function(){
         $(this).change(function() {
             if($(this).val() != ''){
-                // ���� ���� �� ������ ������� �����-��������
                 $(this).parent().addClass('input__field');
                 $(this).parent().find('.input__label-content').addClass('active__field');
             } else {
-                // ���� ���� ������ ��������� �����-��������
                 $(this).parent().removeClass('input__field');
                 $(this).parent().find('.input__label-content').removeClass('active__field');
             }

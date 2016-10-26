@@ -66,7 +66,7 @@ $(document).ready(function() {
             }
         });
     });
-    //sider
+    //slider
     $(window).load(function() {
 
         $('#flex-main-slider').flexslider({

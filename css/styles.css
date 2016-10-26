@@ -2768,6 +2768,9 @@ img {
     height:60px;
     margin: auto;
 }
+#ajax-container + #circularG {
+    margin-top: 50px;
+}
 .circularG{
     position:absolute;
     background-color:rgb(0,188,212);
