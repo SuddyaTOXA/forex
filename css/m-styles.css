@@ -777,8 +777,8 @@ a:hover .title-cell { color: #00bcd4; }
     opacity: 1;
 }
 #flex-main-slider .flex-control-paging li a {
-    border: 1px solid #ffffff;
     background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
 #flex-main-slider .flex-control-paging li a:hover,
 #flex-main-slider .flex-control-paging li a.flex-active {
