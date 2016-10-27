@@ -66,18 +66,19 @@ $(document).ready(function() {
             }
         });
     });
-    //slider
-    $(window).load(function() {
 
-        $('#flex-main-slider').flexslider({
-            animation: "slide",
-            animationLoop: true,
-            slideshowSpeed: 9000,
-            smoothHeight: true
-        });
-        // delete next prev text
-        $('.flex-prev').empty();
-        $('.flex-next').empty();
-    });
+    //slider
+    // $(window).load(function() {
+    //
+    //     $('#flex-main-slider').flexslider({
+    //         animation: "slide",
+    //         animationLoop: true,
+    //         slideshowSpeed: 8000,
+    //         smoothHeight: true
+    //     });
+    //     // delete next prev text
+    //     $('.flex-prev').empty();
+    //     $('.flex-next').empty();
+    // });
 
 });

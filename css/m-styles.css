@@ -62,9 +62,10 @@ a, .btn {
 a.btn, .btn {
     display: inline-block;
     max-width: 100%;
+    min-width: 135px;
     width: 100%;
     margin: 0;
-    padding: 8px 43px 7px;
+    padding: 8px 20px 7px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
@@ -686,7 +687,7 @@ a:hover .title-cell { color: #00bcd4; }
 .item-wrap {
     display: table-cell;
     text-align: center;
-    padding: 20px 0 20px;
+    padding: 20px 0 30px;
     height: 20px;
     width: 100%;
     vertical-align: middle;
@@ -1201,6 +1202,10 @@ a:hover .title-cell { color: #00bcd4; }
                 -webkit-transform: rotate(45deg);
                 -o-transform: rotate(45deg);
                 transform: rotate(45deg);
+            }
+            .page-template-faq .accordion-list > li h2:before,
+            .page-template-faq .accordion-list > li h2:after{
+                margin-top: -1px;
             }
             .accordion-list > li:hover:after,
             .accordion-list > li:hover:before,
@@ -2296,22 +2301,19 @@ a.popup-close-btn {
                         display: inline-block;
                         width: 25px;
                         height: 25px;
-                        margin-left: 15px;
+                        margin-left: 12px;
                         text-align: center;
                         -webkit-border-radius: 50%;
                         -moz-border-radius: 50%;
                         border-radius: 50%;
-                        background-color: #757575;
-                    }
-                    .footer-social li:first-child {
-                        margin-left: 0;
-                    }
-                    .footer-social li:hover {
-                        background-color: #00bcd4;
+                        background-color: transparent;
                         -webkit-transition: 0.2s;
                         -moz-transition: 0.2s;
                         -o-transition: 0.2s;
                         transition: 0.2s;
+                    }
+                    .footer-social li:first-child {
+                        margin-left: 0;
                     }
                         .footer-social li a {
                             display: block;
@@ -2319,17 +2321,18 @@ a.popup-close-btn {
                             -moz-border-radius: 50%;
                             border-radius: 50%;
                         }
-                            .footer-social i {
+                            .footer-social .fa {
+                                font-size: 17px;
                                 vertical-align: top;
                                 line-height: 26px;
-                                color: #212121;
+                                color: #757575;
                                 -webkit-transition: 0.2s;
                                 -moz-transition: 0.2s;
                                 -o-transition: 0.2s;
                                 transition: 0.2s;
                             }
-                            .footer-social i.fa {
-                                font-size: 17px;
+                            .footer-social .fa:hover {
+                                color: #00bcd4;
                             }
 
 /*----------------------------------------------------------------------------------*/

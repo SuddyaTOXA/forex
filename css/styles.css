@@ -62,8 +62,9 @@ a, .btn {
 a.btn, .btn {
     display: inline-block;
     max-width: 100%;
+    min-width: 150px;
     margin: 0;
-    padding: 12px 43px 13px;
+    padding: 12px 25px 13px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
@@ -365,6 +366,18 @@ img {
                 font-size: 14px;
                 color: #bdbdbd;
             }
+            .cell-box {
+                overflow: hidden;
+                height: 186px;
+                padding-bottom: 0;
+                margin-bottom: 18px;
+            }
+            .section-main-page-news .cell-box {
+                height: 126px;
+            }
+            .cell-list.top-list .cell-box {
+                height: 168px;
+            }
             .cell-box * {
                 line-height: 1.3;
             }
@@ -383,6 +396,9 @@ img {
                         -moz-transition: 0.2s;
                         -o-transition: 0.2s;
                         transition: 0.2s;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                     }
                     a:hover .title-cell { color: #00bcd4; }
                     .author-date {
@@ -764,7 +780,7 @@ img {
                 .widget-news,
                 .widget-popular {
                     padding: 13px 16px 24px;
-                    height: 454px;
+                    min-height: 472px;
                 }
                 .widget-popular {
                     padding-top: 18px;
@@ -1065,6 +1081,10 @@ img {
             -webkit-transform: rotate(45deg);
             -o-transform: rotate(45deg);
             transform: rotate(45deg);
+        }
+        .page-template-faq .accordion-list > li h2:before,
+        .page-template-faq .accordion-list > li h2:after{
+            margin-top: -1px;
         }
         .accordion-list > li:hover h2:after,
         .accordion-list > li:hover h2:before,
@@ -2147,41 +2167,39 @@ img {
             display: inline-block;
             width: 25px;
             height: 25px;
-            margin-left: 15px;
+            margin-left: 12px;
             text-align: center;
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
             border-radius: 50%;
-            background-color: #757575;
+            background-color: transparent;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -o-transition: 0.2s;
+            transition: 0.2s;
         }
         .footer-social li:first-child {
             margin-left: 0;
         }
-            .footer-social li:hover {
-                background-color: #00bcd4;
-                -webkit-transition: 0.2s;
-                -moz-transition: 0.2s;
-                -o-transition: 0.2s;
-                transition: 0.2s;
+            .footer-social li a {
+                display: block;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
             }
-                .footer-social li a {
-                    display: block;
-                    -webkit-border-radius: 50%;
-                    -moz-border-radius: 50%;
-                    border-radius: 50%;
+                .footer-social .fa {
+                    font-size: 17px;
+                    vertical-align: top;
+                    line-height: 26px;
+                    color: #757575;
+                    -webkit-transition: 0.2s;
+                    -moz-transition: 0.2s;
+                    -o-transition: 0.2s;
+                    transition: 0.2s;
                 }
-                    .footer-social i {
-                        vertical-align: top;
-                        line-height: 26px;
-                        color: #212121;
-                        -webkit-transition: 0.2s;
-                        -moz-transition: 0.2s;
-                        -o-transition: 0.2s;
-                        transition: 0.2s;
-                    }
-                    .footer-social i.fa {
-                        font-size: 17px;
-                    }
+                .footer-social .fa:hover {
+                    color: #00bcd4;
+                }
 
 /*----------------------------------------------------------------------------------*/
 /*--------------------------------------OTHER---------------------------------------*/

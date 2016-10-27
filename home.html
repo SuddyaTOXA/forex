@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="assets/flex/flexslider.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/flex/jquery.flexslider-min.js"></script>
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -126,6 +128,19 @@
                     </li>
                 </ul>
             </div>
+            <script>
+                $(window).load(function() {
+                    $('#flex-main-slider').flexslider({
+                        animation: "slide",
+                        animationLoop: true,
+                        slideshowSpeed: 8000,
+                        smoothHeight: true
+                    });
+                    // delete next prev text
+                    $('.flex-prev').empty();
+                    $('.flex-next').empty();
+                });
+            </script>
         </section>
 
         <section class="section-main-page-news">
@@ -511,8 +526,6 @@
         </ul>
     </footer>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="assets/flex/jquery.flexslider-min.js"></script>
 	<script src="js/scroll.js"></script>
     <script src="js/mainJs.js"></script>
 </body>
