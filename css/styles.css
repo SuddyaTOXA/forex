@@ -312,12 +312,23 @@ img {
 /*---------------------------------------CELL-LIST-------------------------------*/
 .cell-list {
     overflow: hidden;
+    margin-bottom: -10px;
 }
     .cell-wrap {
-        margin: 10px;
-        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
-        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
-        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+        margin: 10px 10px 20px;
+        -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+    .cell-wrap:hover {
+        -webkit-box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     }
     .cell-list > li {
         float: left;
@@ -329,6 +340,7 @@ img {
     }
         .list-box {
             overflow: hidden;
+            background: #fff;
         }
             .list-box-img {
                 position: relative;
@@ -464,12 +476,16 @@ img {
                 text-decoration: none;
                 color: #212121;
             }
-            .main-nav  li:hover,
+            .main-nav li:hover,
             .main-nav > ul > li > a:hover,
             .main-nav .current-menu-item,
             .main-nav .current-menu-ancestor,
             .main-nav .current-menu-parent {
                 color: #00bcd4;
+            }
+            .main-nav .current-menu-item,
+            .main-nav .current-menu-ancestor,
+            .main-nav .current-menu-parent {
                 border-bottom-color: #00bcd4;
             }
             .main-nav .sub-menu {
@@ -564,7 +580,7 @@ img {
         .item-wrap {
             display: table-cell;
             text-align: center;
-            padding: 30px 0 50px;
+            padding: 30px 0 60px;
             height: 20px;
             width: 100%;
             vertical-align: middle;
@@ -654,8 +670,8 @@ img {
     opacity: 1;
 }
 #flex-main-slider .flex-control-paging li a {
-    border: 1px solid #ffffff;
     background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
 #flex-main-slider .flex-control-paging li a:hover,
 #flex-main-slider .flex-control-paging li a.flex-active {
@@ -676,7 +692,7 @@ img {
     transform: none;
 }
 #flex-main-slider .flex-control-nav {
-    bottom: 0;
+    bottom: 12px;
 }
 
 .flex-direction-nav,
@@ -748,6 +764,11 @@ img {
                 .widget-news,
                 .widget-popular {
                     padding: 13px 16px 24px;
+                    height: 454px;
+                }
+                .widget-popular {
+                    padding-top: 18px;
+                    padding-bottom: 18px;
                 }
                 .widget-title {
                     margin-left: -16px;
@@ -790,7 +811,7 @@ img {
                                 .widget-text-wrap > a {
                                     text-decoration: none;
                                 }
-                                .widget-text-wrap > a:hover h3 {
+                                .widget-text-wrap > a:hover .widget-item-title {
                                     color: #00bcd4;
                                 }
                                 .widget-item-title {
@@ -800,6 +821,10 @@ img {
                                     font-size: 16px;
                                     font-weight: 400;
                                     color: #424242;
+                                    -webkit-transition: 0.2s;
+                                    -moz-transition: 0.2s;
+                                    -o-transition: 0.2s;
+                                    transition: 0.2s;
                                 }
                                     .author, .author a, .date {
                                         font-size: 13px;
@@ -878,7 +903,7 @@ img {
                 .list-news-text-wrap > a {
                     text-decoration: none;
                 }
-                    .list-news-text-wrap > a:hover h3 {
+                    .list-news-text-wrap > a:hover .list-news-item-title {
                         color: #00bcd4;
                     }
                     .list-news-item-title {
@@ -888,6 +913,10 @@ img {
                         font-size: 24px;
                         font-weight: 400;
                         color: #424242;
+                        -webkit-transition: 0.2s;
+                        -moz-transition: 0.2s;
+                        -o-transition: 0.2s;
+                        transition: 0.2s;
                     }
                     .list-news .author,
                     .list-news .author a,
@@ -1868,13 +1897,13 @@ img {
         }
         .content-block img.alignleft{
             float: left;
-            margin: 5px 20px 18px 0;
+            margin: 5px 20px 10px 0;
             max-width: 535px;
             width: 55%;
         }
         .content-block img.alignright{
             float: right;
-            margin: 5px 0 18px 20px;
+            margin: 5px 0 10px 20px;
             max-width: 535px;
             width: 55%;
         }

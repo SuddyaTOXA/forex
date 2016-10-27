@@ -524,7 +524,10 @@ a:hover .title-cell { color: #00bcd4; }
                     text-decoration: none;
                     color: #424242;
                 }
-                .mobile-menu li:hover > a {
+                .mobile-menu li:hover > a,
+                .mobile-menu li.current-menu-item > a,
+                .mobile-menu li.current-menu-ancestor > a,
+                .mobile-menu li.current-menu-parent > a {
                     color: #00bcd4;
                 }
                 .mobile-menu > li > a {
@@ -2270,7 +2273,7 @@ a.popup-close-btn {
                 text-decoration: none;
             }
             .footer-nav > li a:hover,
-            .footer-nav > li.current-item a {
+            .footer-nav > li.current-menu-item a {
                 color: #ffffff;
             }
                 .footer-social {
