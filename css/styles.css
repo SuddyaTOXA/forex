@@ -564,6 +564,7 @@ img {
         .item-wrap {
             display: table-cell;
             text-align: center;
+            padding: 30px 0 50px;
             height: 20px;
             width: 100%;
             vertical-align: middle;
@@ -625,7 +626,6 @@ img {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
     left: 0;
 }
 #flex-main-slider .flex-direction-nav a:before {
@@ -635,26 +635,35 @@ img {
     height: 38px;
     left: 10px;
     font-family: FontAwesome;
-    font-size: 60px;
-    line-height: 38px;
+    font-size: 50px;
+    line-height: 440px;
     text-indent: 0;
     color: #ffffff;
     background-image: none;
 }
 #flex-main-slider .flex-direction-nav .flex-prev,
 #flex-main-slider :hover .flex-direction-nav .flex-prev {
+    top: 20px;
     left: 30px;
     opacity: 1;
 }
 #flex-main-slider .flex-direction-nav .flex-next,
 #flex-main-slider :hover .flex-direction-nav .flex-next {
+    top: 20px;
     right: 30px;
     opacity: 1;
 }
+#flex-main-slider .flex-control-paging li a {
+    border: 1px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#flex-main-slider .flex-control-paging li a:hover,
+#flex-main-slider .flex-control-paging li a.flex-active {
+    background-color: rgba(255, 255, 255, 1);
+}
 
 #flex-main-slider .flex-direction-nav a {
-    margin-top: -23px;
-    height: 38px;
+    height: 440px;
     opacity: 1;
     color: transparent;
 }
@@ -666,7 +675,9 @@ img {
     -o-transform: none;
     transform: none;
 }
-
+#flex-main-slider .flex-control-nav {
+    bottom: 0;
+}
 
 .flex-direction-nav,
 .flex-direction-nav {
