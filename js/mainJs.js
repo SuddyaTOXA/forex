@@ -75,5 +75,9 @@ $(document).ready(function() {
             controlNav: false,
             slideshowSpeed: 9000
         });
+        // delete next prev text
+        $('.flex-prev').empty();
+        $('.flex-next').empty();
     });
+
 });

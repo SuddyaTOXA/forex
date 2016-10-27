@@ -39,4 +39,17 @@ $(document).ready(function() {
             }
         });
     });
+    //slider
+    $(window).load(function() {
+
+        $('#flex-main-slider').flexslider({
+            animation: "slide",
+            animationLoop: true,
+            controlNav: false,
+            slideshowSpeed: 9000
+        });
+        // delete next prev text
+        $('.flex-prev').empty();
+        $('.flex-next').empty();
+    });
 });
