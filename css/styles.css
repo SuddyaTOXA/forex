@@ -495,9 +495,9 @@ img {
             }
             .main-nav li:hover,
             .main-nav > ul > li > a:hover,
-            .main-nav .current-menu-item,
-            .main-nav .current-menu-ancestor,
-            .main-nav .current-menu-parent {
+            .main-nav .current-menu-item > a,
+            .main-nav .current-menu-ancestor > a,
+            .main-nav .current-menu-parent > a {
                 color: #00bcd4;
             }
             .main-nav .current-menu-item,
@@ -591,8 +591,8 @@ img {
         display: table;
         width: 100%;
         height: 440px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
         .item-wrap {
             display: table-cell;
@@ -601,7 +601,7 @@ img {
             height: 20px;
             width: 100%;
             vertical-align: middle;
-            color: #ffffff;
+            color: #424242;
         }
         .flex-direction-nav {
             /*display:  none;*/
@@ -613,11 +613,14 @@ img {
     }
     .item-content-box {
         font-weight: 300;
+        font-size: 24px;
+        line-height: 1.2;
     }
     .item-title {
-        margin-bottom:  12px;
+        margin-bottom: 8px;
         font-size: 34px;
         font-weight: 300;
+        color: #212121;
     }
     .item-content-box * {
         margin-bottom: 8px;
@@ -626,22 +629,21 @@ img {
         margin-bottom: 0;
     }
     .item-btn-box {
-        margin-top: 25px;
+        margin-top: 20px;
     }
-        .item-btn-box i {
-            line-height: 20px;
-            color: #ffffff;
-            -webkit-transition: 0.2s;
-            -moz-transition: 0.2s;
-            -o-transition: 0.2s;
-            transition: 0.2s;
+        .item-btn-box a.btn {
+            font-size: 18px;
+            line-height: 1.3;
+            font-weight: 300;
         }
-            .item-btn-box i.fa {
-                font-size: 24px;
-            }
-            .item-btn-box i.fa-angle-right {
-                margin-left: 7px;
-            }
+        .item-btn-box a.btn:hover {
+            opacity: 0.8;
+        }
+        .item-btn-box i.fa-angle-right {
+            font-size: 24px;
+            margin-left: 7px;
+            line-height: 20px;
+        }
 #flex-main-slider {
     position: relative;
 }
