@@ -673,6 +673,12 @@ a:hover .title-cell { color: #00bcd4; }
     width: 100%;
     background-color: #bdbdbd;
 }
+.section-main-page-banner .slides {
+    display: none;
+}
+.section-main-page-banner .flex-viewport .slides {
+    display: block;
+}
 .slides > li {
     background-repeat: no-repeat;
     background-position: center;
