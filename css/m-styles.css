@@ -418,6 +418,8 @@ a:hover .title-cell { color: #00bcd4; }
 }
     .logo {
         float: left;
+        max-height: 27px;
+        max-width: 117px;
         margin-top: 17px;
         -webkit-transition: 0.35s;
         -moz-transition: 0.35s;
