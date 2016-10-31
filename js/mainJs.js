@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+    //     $('#flex-main-slider').flexslider({
+    //         animation: "slide",
+    //         animationLoop: true,
+    //         slideshowSpeed: 8000,
+    //         smoothHeight: true
+    //     });
+    //     // delete next prev text
+    //     $('.flex-prev').empty();
+    //     $('.flex-next').empty();
+
     // the blocking of links default behavior
     function prevent(){
         $('.prevent, .mobile-menu .expanded, a[href="#"]').on('click', function(event){
