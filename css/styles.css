@@ -587,12 +587,12 @@ img {
 }
     .section-main-page-banner .slides {
         display: none;
-        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-        -o-animation: fadein 2s; /* Opera < 12.1 */
-        animation: fadein 2s;
-        opacity: 0;
+        /*-webkit-animation: fadein 2s; !* Safari, Chrome and Opera > 12.1 *!*/
+        /*-moz-animation: fadein 2s; !* Firefox < 16 *!*/
+        /*-ms-animation: fadein 2s; !* Internet Explorer *!*/
+        /*-o-animation: fadein 2s; !* Opera < 12.1 *!*/
+        /*animation: fadein 2s;*/
+        /*opacity: 0;*/
     }
     .section-main-page-banner .flex-viewport .slides {
         display: block;
@@ -602,7 +602,14 @@ img {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            /*opacity: 0;*/
+            /*-webkit-transition: opacity 1s ease;*/
+            /*-moz-transition: opacity 1s ease;*/
+            /*transition: opacity 1s ease;*/
         }
+        /*.slides > .flex-active-slide {*/
+            /*opacity: 1;*/
+        /*}*/
     .item-box {
         display: table;
         width: 100%;

@@ -24,7 +24,7 @@
             <div class="container">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="img/logo.png" alt="Forex">
+                        <img src="img/Logo_desktop.png" alt="Forex">
                     </a>
                 </div>
 
@@ -129,18 +129,16 @@
                 </ul>
             </div>
             <script>
-                $(window).load(function() {
-                    $('#flex-main-slider').flexslider({
-//                        animation: "fade",
-                        animation: "slide",
-                        animationLoop: true,
-                        slideshowSpeed: 8000,
-                        smoothHeight: true
-                    });
-                    // delete next prev text
-                    $('.flex-prev').empty();
-                    $('.flex-next').empty();
+                $('#flex-main-slider').flexslider({
+                    // animation: "fade",
+                    animation: "slide",
+                    animationLoop: true,
+                    slideshowSpeed: 8000,
+                    smoothHeight: true
                 });
+                // delete next prev text
+                $('.flex-prev').empty();
+                $('.flex-next').empty();
             </script>
         </section>
 
