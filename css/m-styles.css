@@ -671,7 +671,7 @@ a:hover .title-cell { color: #00bcd4; }
 .section-main-page-banner {
     display: table;
     width: 100%;
-    background-color: #bdbdbd;
+    background-color: #fafafa;
 }
 .section-main-page-banner .slides {
     display: none;

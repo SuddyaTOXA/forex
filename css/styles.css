@@ -34,6 +34,7 @@ a:hover                        { color: #00bcd4; text-decoration:none; }
 .align-l                       { text-align:left !important; }
 .align-c                       { text-align:center !important; }
 .clear                         { clear:both; }
+a.none-underline               { text-decoration: none; }
 
 /*----------------------------------------------------------------------------------*/
 /*--------------------------------------FONTS---------------------------------------*/
@@ -582,17 +583,11 @@ img {
     margin-top: -1px;
     display: table;
     width: 100%;
-    background-color: #bdbdbd;
+    background-color: #fafafa;
     height: 440px;
 }
     .section-main-page-banner .slides {
         display: none;
-        /*-webkit-animation: fadein 2s; !* Safari, Chrome and Opera > 12.1 *!*/
-        /*-moz-animation: fadein 2s; !* Firefox < 16 *!*/
-        /*-ms-animation: fadein 2s; !* Internet Explorer *!*/
-        /*-o-animation: fadein 2s; !* Opera < 12.1 *!*/
-        /*animation: fadein 2s;*/
-        /*opacity: 0;*/
     }
     .section-main-page-banner .flex-viewport .slides {
         display: block;
@@ -602,14 +597,7 @@ img {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            /*opacity: 0;*/
-            /*-webkit-transition: opacity 1s ease;*/
-            /*-moz-transition: opacity 1s ease;*/
-            /*transition: opacity 1s ease;*/
         }
-        /*.slides > .flex-active-slide {*/
-            /*opacity: 1;*/
-        /*}*/
     .item-box {
         display: table;
         width: 100%;
@@ -1322,6 +1310,8 @@ img {
 /*---------------------------------------FOREX-PAGE---------------------------------*/
 .section-page-banner {
     background-color: #f2f2f2;
+    background-repeat: no-repeat;
+    background-position: center;
 }
     .page-banner-wrapper {
         display: table;
@@ -1466,9 +1456,6 @@ img {
             .broker-info-list > li:last-child {
                 border-right: none;
             }
-                .broker-info-list > li:last-child > .btn:first-child {
-                    margin-top: 5px;
-                }
                 .broker-position {
                     position: absolute;
                     display: block;
@@ -1549,6 +1536,7 @@ img {
                             }
                             .regulation-img-wrap img {
                                 max-width: 100%;
+                                max-height: 20px;
                             }
                              .mini-title {
                                  display: block;
